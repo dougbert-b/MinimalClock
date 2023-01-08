@@ -53,6 +53,8 @@ void WTAClient::Setup(void)
 	//wifiManager.setBreakAfterConfig(true); // Get out of WiFiManager even if we fail to connect after config.  So our Hail Mary pass could take care of it.
 	//wifiManager.setSaveConfigCallback(saveConfigCallback);
 
+  wifiManager.setHostname("MinimalClock");
+
 	int connectionStatus = WL_IDLE_STATUS;
 
 	if (strlen(homeWifiName) > 0)

@@ -238,9 +238,9 @@ void StepperCalc::calcNextStep()
 unsigned long
 StepperCalc::sqrt(unsigned long x)
 {
-  register unsigned long xr;  // result register
-  register unsigned long q2;  // scan-bit register
-  register unsigned char f;   // flag (one bit)
+  unsigned long xr;  // result register
+  unsigned long q2;  // scan-bit register
+  unsigned char f;   // flag (one bit)
 
   xr = 0;                     // clear result
   q2 = 0x40000000L;           // higest possible result bit
